@@ -4,12 +4,13 @@ $main-font: 'Fira Sans Condensed', sans-serif;;
 
 body.index {
   margin: 0;
-  // background-color: $main-color;
+  background-color: black;
   font-family: $main-font;
   letter-spacing: 1.75px;
   font-weight: 200;
   color: white;
   text-align: center;
+  overflow: hidden;
 
   .banner {
     background-position: cover;
@@ -21,9 +22,19 @@ body.index {
     .overlay {
       z-index: -1;
       position: absolute;
-      background-color: rgba(0, 0, 0, .65);
+      background-color: rgba(5, 5, 15, .6);
       height: 100%;
       width: 100%;
+    }
+
+    .half-overlay {
+      z-index: -1;
+      position: absolute;
+      background-color: rgba(0, 0, 0, .55);
+      height: 100%;
+      width: 50%;
+      transform: translateX(100%);
+      // border-left: 1px solid white;
     }
 
     .banner-nav {
@@ -52,46 +63,52 @@ body.index {
             text-decoration: none;
             color: white;
           }
+
+          a:hover {
+            color: gray;
+          }
         }
       }
     }
 
-    .banner-header {
-      height: 100vh;
+    header.header {
       display: flex;
       align-items: center;
       justify-content: center;
-      // width: 70%;
+      flex-direction: column;
+      text-align: left;
+      height: 100vh;
 
-      .header-title {
-        font-size: 1em;
-        text-align: left;
-        margin-bottom: 4em;
+      h2 {
+        width: 400px;
+        margin: 0 0 1em 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 8em;
+        font-weight: 400;
+        font-family: 'Dancing Script', cursive;
+        transform: translateX(-60%);
 
-        h2 {
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          font-size: 6em;
+        small {
           font-weight: 200;
-          font-family: 'Dancing Script', cursive;
+          font-size: 30%;
+          line-height: .7;
+          font-family: $main-font;
 
-          span {
-            font-size: 60%;
-            font-weight: 200;
-            line-height: .9;
-            margin-left: 2px;
-            font-family: $main-font;
-          }
-
-          small {
-            font-size: 30%;
-            line-height: .85;
-            margin-left: 6px;
-            font-family: $main-font;
+          &:first-child {
+            font-size: 20%;
+            line-height: .6;
           }
         }
       }
+      // h3 {
+      //   margin: 0 0 2em 0;
+      //   font-size: 2em;
+      //   line-height: .9;
+      //   font-weight: 200;
+      //   width: 400px;
+      //   transform: translateX(54%);
+      // }
     }
   }
 }
