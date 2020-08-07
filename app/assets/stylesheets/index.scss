@@ -3,17 +3,18 @@ $main-color: #212121;
 $main-font: 'Fira Sans Condensed', sans-serif;
 
 html {
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 
 body.index {
   margin: 0;
-  background-color: black;
+  background-color: rgba(8, 11, 18, 1);
   font-family: $main-font;
   letter-spacing: 1.75px;
   font-weight: 200;
   color: white;
   text-align: center;
+  letter-spacing: 2px;
 
   .banner {
     background-position: cover;
@@ -110,22 +111,8 @@ body.index {
         color: white;
         font-weight: 100;
         font-size: 1.5em;
-        letter-spacing: 2px;
         padding: .5em;
       }
-    }
-  }
-
-  #about-me {
-    height: 100vh;
-    background-color: rgba(8, 11, 17, 1);
-
-    .half-overlay {
-      position: absolute;
-      background-color: rgba(0, 0, 0, .55);
-      height: 100%;
-      width: 50%;
-      transform: translateX(100%);
     }
   }
 }
