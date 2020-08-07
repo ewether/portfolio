@@ -1,0 +1,44 @@
+section.contact {
+  height: 120vh;
+  background-color: rgba(8, 11, 18, 1);
+  z-index: 1;
+  position: relative;
+
+  .half-overlay {
+    z-index: -1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .55);
+    height: 120vh;
+    width: 50%;
+    transform: translateX(100%);
+  }
+
+  .contact-section {
+    width: 45%;
+    height: 120vh;
+    margin: auto;
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .contact-body {
+      padding: 2em;
+      border: 1px solid white;
+
+      h2 {
+        font-size: 3em;
+      }
+
+      h3 {
+        // font-size: 2em;
+
+        p {
+          // font-size: 1em;
+        }
+      }
+    }
+  }
+}
