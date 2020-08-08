@@ -10,7 +10,7 @@ section.contact {
   .overlay {
     z-index: -1;
     position: absolute;
-    background-color: rgba(8, 10, 17, .9);
+    background-color: rgba(8, 10, 17, .95);
     height: 100%;
     width: 100%;
   }
@@ -36,8 +36,17 @@ section.contact {
     justify-content: center;
 
     .contact-body {
-      padding: 2em;
       border: 1px solid white;
+      position: relative;
+      z-index: 1;
+
+      .overlay {
+        z-index: -1;
+        position: absolute;
+        background-color: rgba(8, 10, 17, .7);
+        height: 100%;
+        width: 100%;
+      }
 
       h2 {
         font-size: 3em;
