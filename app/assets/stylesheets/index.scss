@@ -115,6 +115,32 @@ body.index {
       }
     }
   }
+
+  // .background {
+  //   // height: 50vh;
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   position: relative;
+  //   z-index: 1;
+
+  //   .overlay {
+  //     z-index: -1;
+  //     position: absolute;
+  //     background-color: rgba(5, 5, 15, .6);
+  //     height: 100%;
+  //     width: 100%;
+  //   }
+
+  //   .half-overlay {
+  //     z-index: -1;
+  //     position: absolute;
+  //     background-color: rgba(0, 0, 0, .55);
+  //     height: 100%;
+  //     width: 50%;
+  //     transform: translateX(100%);
+  //   }
+  // }
 }
 
 

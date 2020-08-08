@@ -7,6 +7,14 @@ section.portfolio {
   z-index: 1;
   position: relative;
 
+  .overlay {
+    z-index: -1;
+    position: absolute;
+    background-color: rgba(8, 10, 17, .95);
+    height: 100%;
+    width: 100%;
+  }
+
   .half-overlay {
     z-index: -1;
     position: absolute;

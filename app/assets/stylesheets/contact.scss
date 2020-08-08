@@ -3,6 +3,17 @@ section.contact {
   background-color: rgba(8, 11, 18, 1);
   z-index: 1;
   position: relative;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .overlay {
+    z-index: -1;
+    position: absolute;
+    background-color: rgba(8, 10, 17, .9);
+    height: 100%;
+    width: 100%;
+  }
 
   .half-overlay {
     z-index: -1;
