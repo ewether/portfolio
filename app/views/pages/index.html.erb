@@ -3,7 +3,6 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> -->
   <title>Portfolio</title>
 </head>
 <body class="index">
@@ -13,20 +12,24 @@
 
     <nav class="banner-nav">
       <div class="nav-header">
-        <h2 class="nav-title">Portfolio</h2>
+        <h2 class="nav-title">Elise Wetherholt</h2>
       </div>
 
       <ul class="nav-links">
-        <li><a href="#about-me">About Me</a></li>
-        <li><%= link_to "Portfolio", portfolio_path %></li>
-        <li><%= link_to "Contact Me", contact_path %></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
 
     <header class="header">
       <div class="intro">
         <h2>Hi, I'm Elise</h2>
-        <h3>Front-end developer</h3>
+        <h3>Front-End Developer</h3>
+      </div>
+      <div class="buttons">
+        <button><a href="#">Resume</a></button>
+        <button><a href="#portfolio">Portfolio</a></button>
       </div>
     </header>
 
@@ -37,11 +40,11 @@
     </div>
   </div>
 
-  <section class="about" style="background-image: url(https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+  <section id="about" style="background-image: url(https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
     <div class="overlay"></div>
     <div class="half-overlay"></div>
     <div class="about-section">
-      <div class="about-body" id="about-me" style="background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/fern-leaf_OSZ8T0GGHL.jpg);">
+      <div class="about-body" style="background-image: url(https://images.unsplash.com/photo-1589411915152-7d850ee41eb4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);">
         <div class="overlay"></div>
         <div class="about-content">
           <h2>About me</h2>
@@ -52,12 +55,7 @@
     </div>
   </section>
 
-<!--   <div class="background">
-    <div class="overlay"></div>
-    <div class="half-overlay"></div>
-  </div> -->
-
-  <section class="portfolio" style="background-image: url(https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+  <section id="portfolio" style="background-image: url(https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
     <div class="overlay"></div>
     <div class="half-overlay"></div>
 
@@ -85,7 +83,7 @@
     </div>
   </section>
 
-  <section class="contact" style="background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/fern-leaf_2BPBQRWV4L.jpg);">
+  <section id="contact" style="background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/fern-leaf_2BPBQRWV4L.jpg);">
     <div class="overlay"></div>
     <div class="half-overlay"></div>
 
@@ -106,20 +104,7 @@
 
       </div>
     </div>
-
   </section>
-
-  <footer>
-  </footer>
-
-<section>
-</section>
-
-<aside>
-</aside>
-
-<footer>
-</footer>
 
 </body>
 </html>

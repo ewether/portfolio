@@ -1,4 +1,4 @@
-section.about {
+section#about {
   height: 130vh;
   background-color: rgba(8, 11, 18, 1);
   z-index: 1;
@@ -18,7 +18,7 @@ section.about {
   .half-overlay {
     z-index: -1;
     position: absolute;
-    background-color: rgba(0, 0, 0, .55);
+    background-color: rgba(0, 0, 0, .35);
     height: 130vh;
     width: 50%;
     transform: translateX(100%);
