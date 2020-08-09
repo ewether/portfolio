@@ -1,4 +1,4 @@
-section.contact {
+section#contact {
   height: 120vh;
   background-color: rgba(8, 11, 18, 1);
   z-index: 1;
@@ -18,7 +18,7 @@ section.contact {
   .half-overlay {
     z-index: -1;
     position: absolute;
-    background-color: rgba(0, 0, 0, .55);
+    background-color: rgba(0, 0, 0, .35);
     height: 120vh;
     width: 50%;
     transform: translateX(100%);
