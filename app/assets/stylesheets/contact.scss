@@ -1,32 +1,20 @@
+$base-spacing: 2em;
+
 section#contact {
-  height: 120vh;
-  background-color: rgba(8, 11, 18, 1);
-  z-index: 1;
-  position: relative;
-  background-position: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   .overlay {
-    z-index: -1;
-    position: absolute;
     background-color: rgba(8, 10, 17, .95);
-    height: 100%;
-    width: 100%;
   }
 
   .half-overlay {
-    z-index: -1;
-    position: absolute;
     background-color: rgba(0, 0, 0, .35);
-    height: 120vh;
-    width: 50%;
-    transform: translateX(100%);
+    height: 130vh;
   }
 
   .contact-section {
-    width: 45%;
-    height: 120vh;
+    width: 50%;
+    max-width: 950px;
+    height: 130vh;
     margin: auto;
     position: relative;
     letter-spacing: 2px;
@@ -41,15 +29,7 @@ section#contact {
       z-index: 1;
 
       .overlay {
-        z-index: -1;
-        position: absolute;
         background-color: rgba(8, 10, 17, .7);
-        height: 100%;
-        width: 100%;
-      }
-
-      h2 {
-        font-size: 3em;
       }
 
       h3 {
