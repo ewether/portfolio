@@ -1,20 +1,20 @@
 $base-spacing: 2em;
-$accent-color: rgb(25, 37, 42);
+// $accent-color: rgb(25, 37, 42);
 $main-font: 'Fira Sans Condensed', sans-serif;
 
 @mixin button {
-    height: 3.5em;
-    border: 1px solid white;
-    border-radius: 2px;
-    background-color: rgba(8, 11, 18, 1);
+  height: 3.5em;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: rgba(8, 11, 18, 1);
 
-    a {
-      text-decoration: none;
-      color: white;
-      font-weight: 100;
-      font-size: 1.5em;
-      padding: .5em;
-    }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 1.5em;
+    padding: $base-spacing/4;
+  }
 }
 
 button {
@@ -23,7 +23,6 @@ button {
 
 body.index {
   margin: 0;
-  // background-color: rgba(8, 11, 18, 1);
   font-family: $main-font;
   letter-spacing: 1.75px;
   font-weight: 200;
@@ -38,22 +37,6 @@ body.index {
     position: relative;
     z-index: 1;
 
-    .overlay {
-      z-index: -1;
-      position: absolute;
-      background-color: rgba(5, 5, 15, .6);
-      height: 100%;
-      width: 100%;
-    }
-
-    .half-overlay {
-      z-index: -1;
-      position: absolute;
-      background-color: rgba(0, 0, 0, .5);
-      height: 100%;
-      width: 50%;
-      transform: translateX(100%);
-    }
 
     .banner-nav {
       display: flex;
@@ -84,6 +67,7 @@ body.index {
 
           a:hover {
             color: gray;
+            transition: all 0.15s ease-in-out;
           }
         }
       }
@@ -95,21 +79,16 @@ body.index {
       justify-content: center;
       flex-direction: column;
       text-align: left;
-      // text-align: center;
       height: 85vh;
 
       .intro {
-        // text-align: left;
-        // margin-right: $base-spacing;
 
         h2 {
-          margin: 0;
           font-size: 6.5em;
         }
 
         h3 {
-          // text-align: center;
-          font-size: 2.5em;
+          font-size: 3em;
           font-weight: 200;
           margin: 0;
           padding-left: 3px;
@@ -119,8 +98,6 @@ body.index {
     }
 
     .buttons {
-      // display: flex;
-      // flex-direction: column;
       align-items: center;
       margin-top: $base-spacing*2;
 
@@ -134,9 +111,13 @@ body.index {
         }
 
         &:first-child {
-          // background-color: rgba(8, 11, 18, 1);
         }
       }
+    }
+
+    button:hover {
+      border: 1px solid gray;
+      transition: all 0.15s ease-in-out;
     }
   }
 }
