@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+}
+
+section {
+  padding: 0px 30px;
+}
+
+@media screen and (max-width: 400px) {
+  body#body {
+    margin: 0;
+    letter-spacing: 1.75px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    background-color: #E6FFE2;
+  }
+  body#body .site-wrapper nav {
+    background-color: rgba(44, 93, 96, 0.5);
+    padding: 22px 30px 0;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    margin-top: -20px;
+  }
+  body#body .site-wrapper nav .nav-header {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  body#body .site-wrapper nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    font-weight: 300;
+  }
+  body#body .site-wrapper nav .nav-links li {
+    list-style-type: none;
+  }
+  body#body .site-wrapper .banner-body {
+    color: #2C5360;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  body#body .site-wrapper .banner-body .banner-background {
+    width: 80%;
+    height: 260px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 21px;
+    border-radius: 1px;
+  }
+  body#body .site-wrapper .banner-body .banner-profile {
+    width: 40%;
+    height: 166px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -117px 0 0 192px;
+    border-radius: 1px;
+  }
+  body#body .site-wrapper .banner-body .intro .intro-heading {
+    color: white;
+    font-size: 1.75em;
+    position: relative;
+    top: 111px;
+    left: 50px;
+  }
+  body#body .site-wrapper .banner-body .intro h3 {
+    font-size: .75em;
+    font-weight: bold;
+    position: relative;
+    top: -41px;
+    left: 23px;
+  }
+  body#body .site-wrapper .about-body {
+    margin-top: 54px;
+  }
+  body#body .site-wrapper .about-body h2 {
+    color: #2C5360;
+    font-size: 1.4em;
+    margin: 0 0 2px;
+  }
+  body#body .site-wrapper .about-body .about-content {
+    color: #fff;
+    background-color: rgba(44, 93, 96, 0.76);
+    padding: 20px;
+    border-radius: 1px;
+  }
+  body#body .site-wrapper .about-body .about-content .about-intro {
+    font-weight: 400;
+    margin: 12px 0 24px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
