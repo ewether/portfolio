@@ -18,7 +18,10 @@
 
         <nav class="nav">
             <div class="nav-header">
-                <h2 class="nav-title">Elise Wetherholt</h2>
+                <!-- <h2 class="nav-title">Elise Wetherholt</h2> -->
+                <a href="#" target="_blank" class="contact-link">
+                    <img class="nav-icon" src="./images/icons/html-coding.png" alt="" width="36" height="36">
+                </a>
             </div>
 
             <!-- <div class="nav-toggle">
@@ -40,6 +43,7 @@
             <div class="intro">
                 <h2 class="intro-heading">Elise Wetherholt</h2>
                 <div class="banner-background" style="background-image: url(./images/background.jpg)"></div>
+                <div class="overlay"></div>
                 <div class="banner-profile" style="background-image: url(./images/profile.jpeg)"></div>
                 <h3>Front-End Developer</h3>
             </div>
@@ -47,9 +51,17 @@
 
         <section id="about">
             <div class="about-body">
-                <h2>About me</h2>
+                <div class="wave">
+                    <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                        <path d="M0,100 C150,170 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:#fff;"></path>
+                    </svg>
+                </div>
+                <div class="header-wrapper">
+                    <h2>About me</h2>
+                    <div class="line"></div>
+                </div>
                 <div class="about-content">
-                    <p class="about-intro">Hello, my name is Elise Wetherholt. Welcome to my portfolio!</p>
+                    <p class="about-intro">Hi, my name is Elise Wetherholt. Welcome to my portfolio!</p>
                     <p> My love for coding started in 2019, at a coding bootcamp in Bali. The Covid-19 lockdown gave
                          me the unique opportunity to fully immerse myself in projects and further develop my skills. This has led
                         me to where I am now,
@@ -60,8 +72,10 @@
 
         <section id="portfolio">
             <div class="portfolio-body">
-                <h2>My Work</h2>
-
+                <div class="header-wrapper">
+                    <h2>My Work</h2>
+                    <div class="line"></div>
+                </div>
                 <div class="portfolio-cards">
                     <div class="card card-1">
                         <div class="top-border"></div>
@@ -128,28 +142,39 @@
 
         <section id="contact">
             <div class="contact-body">
-                <h2>Contact</h2>
-                <div class="contact-a-wrapper">
-                    <a href="https://github.com/ewether" target="_blank" class="contact-link">
-                        <img class="contact-icon" src="./images/icons/github-dark.png" alt="" width="36" height="36">
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/elise-wetherholt/" target="_blank" class="contact-link">
-                        <img class="contact-icon" src="./images/icons/linkedin.png" alt="" width="36" height="36">
-                    </a>
+                <div class="wave">
+                    <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                        <path d="M0,100 C170,170 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:#BFD2C9;"></path>
+                    </svg>
                 </div>
 
-                <h3 class="contact-phone">
-                    <img class="contact-icon" src="./images/icons/apple.png" alt="" width="36" height="36">
-                    <p>(248) 705-7423</p>
-                </h3>
+                <div class="header-wrapper">
+                    <h2>Contact</h2>
+                    <div class="line"></div>
+                </div>
 
-                <h3 class="contact-email">
-                    <a href="mailto: ewether@gmail.com">
-                        <img class="contact-icon" src="./images/icons/message.png" alt="" width="36" height="36">
-                        ewether@gmail.com
-                    </a>
-                </h3>
+                <div class="contact-content">
+                    <h3 class="contact-phone">
+                        <!-- <img class="contact-icon" src="./images/icons/phone.png" alt="" width="36" height="36"> -->
+                        <p>(248) 705-7423</p>
+                    </h3>
+
+                    <h3 class="contact-email">
+                        <a href="mailto: ewether@gmail.com">
+                            <!-- <img class="contact-icon" src="./images/icons/email.png" alt="" width="36" height="36"> -->
+                            ewether@gmail.com
+                        </a>
+                    </h3>
+                    <div class="contact-a-wrapper">
+                        <a href="https://github.com/ewether" target="_blank" class="contact-link">
+                            <img class="contact-icon" src="./images/icons/github-dark.png" alt="" width="36" height="36">
+                        </a>
+                    
+                        <a href="https://www.linkedin.com/in/elise-wetherholt/" target="_blank" class="contact-link">
+                            <img class="contact-icon" src="./images/icons/linkedin.png" alt="" width="36" height="36">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
