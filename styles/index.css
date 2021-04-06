@@ -108,6 +108,12 @@ body#body .site-wrapper .banner-body .overlay {
   }
 }
 
+@media screen and (min-width: 900px) {
+  body#body .site-wrapper .banner-body .overlay {
+    height: 560px;
+  }
+}
+
 body#body .site-wrapper .banner-body .banner-background {
   width: 100%;
   height: 280px;
@@ -128,6 +134,19 @@ body#body .site-wrapper .banner-body .banner-background {
   body#body .site-wrapper .banner-body .banner-background {
     height: 310px;
     margin-top: 18px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body#body .site-wrapper .banner-body .banner-background {
+    margin-top: 11px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body#body .site-wrapper .banner-body .banner-background {
+    height: 560px;
+    margin-top: 6px;
   }
 }
 
@@ -171,6 +190,13 @@ body#body .site-wrapper .banner-body .banner-profile {
 @media screen and (min-width: 710px) {
   body#body .site-wrapper .banner-body .banner-profile {
     width: 30%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body#body .site-wrapper .banner-body .banner-profile {
+    height: 300px;
+    margin-top: -453px;
   }
 }
 
@@ -223,6 +249,21 @@ body#body .site-wrapper .banner-body .intro .intro-heading {
   }
 }
 
+@media screen and (min-width: 800px) {
+  body#body .site-wrapper .banner-body .intro .intro-heading {
+    font-size: 2.25em;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body#body .site-wrapper .banner-body .intro .intro-heading {
+    font-size: 2.5em;
+    margin-left: 60px;
+    top: 232px;
+  }
+}
+
 body#body .site-wrapper .banner-body .intro h3 {
   font-size: .75em;
   font-weight: bold;
@@ -261,6 +302,15 @@ body#body .site-wrapper .banner-body .intro h3 {
 @media screen and (min-width: 670px) {
   body#body .site-wrapper .banner-body .intro h3 {
     top: -80px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body#body .site-wrapper .banner-body .intro h3 {
+    font-size: 1.25em;
+    left: 60px;
+    top: -190px;
+    z-index: 1;
   }
 }
 
@@ -311,6 +361,7 @@ body#body .site-wrapper .about-body .wave {
   padding-bottom: 100%;
   vertical-align: middle;
   overflow: hidden;
+  z-index: 2;
 }
 
 @media screen and (min-width: 650px) {

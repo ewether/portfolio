@@ -93,6 +93,10 @@ body#body {
                 @media screen and (min-width: 600px) {
                     height: 307px;
                 }
+
+                @media screen and (min-width: 900px) {
+                    height: 560px;
+                }
             }
 
             .banner-background {
@@ -111,6 +115,15 @@ body#body {
                 @media screen and (min-width: 600px) {
                     height: 310px;
                     margin-top: 18px;
+                }
+
+                @media screen and (min-width: 800px) {
+                    margin-top: 11px;
+                }
+
+                @media screen and (min-width: 900px) {
+                    height: 560px;
+                    margin-top: 6px;
                 }
             }
 
@@ -147,6 +160,11 @@ body#body {
                 @media screen and (min-width: 710px) {
                     width: 30%;
                 }
+
+                @media screen and (min-width: 900px) {
+                    height: 300px;
+                    margin-top: -453px;
+                }
             }
 
             .intro {
@@ -181,6 +199,17 @@ body#body {
                     @media screen and (min-width: 670px) {
                         top: 158px;
                     }
+
+                    @media screen and (min-width: 800px) {
+                        font-size: 2.25em;
+                        margin-left: 60px;
+                    }
+
+                    @media screen and (min-width: 900px) {
+                        font-size: 2.5em;
+                        margin-left: 60px;
+                        top: 232px;
+                    }
                 }
 
                 h3 {
@@ -213,6 +242,13 @@ body#body {
 
                     @media screen and (min-width: 670px) {
                         top: -80px;
+                    }
+
+                    @media screen and (min-width: 900px) {
+                        font-size: 1.25em;
+                        left: 60px;
+                        top: -190px;
+                        z-index: 1;
                     }
                 }
             }
@@ -257,6 +293,7 @@ body#body {
                 padding-bottom: 100%;
                 vertical-align: middle;
                 overflow: hidden;
+                z-index: 2;
 
                 @media screen and (min-width: 650px) {
                     padding-bottom: 98%;
