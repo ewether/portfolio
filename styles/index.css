@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -13,6 +17,7 @@ h2 {
 
 body#body {
   margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 1.75px;
   font-weight: 200;
   letter-spacing: 2px;
@@ -42,9 +47,6 @@ body#body .site-wrapper nav {
 
 @media screen and (min-width: 650px) {
   body#body .site-wrapper nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -112,6 +114,14 @@ body#body .site-wrapper nav .nav-links li {
           align-items: center;
 }
 
+body#body .site-wrapper nav .nav-links li a {
+  color: #fff;
+}
+
+body#body .site-wrapper nav .nav-links li:hover {
+  cursor: pointer;
+}
+
 body#body .site-wrapper .banner-body {
   color: #1f252e;
   padding: 0;
@@ -154,7 +164,7 @@ body#body .site-wrapper .banner-body .banner-background {
   margin-top: -22px;
 }
 
-@media screen and (min-width: 523px) {
+@media screen and (min-width: 565px) {
   body#body .site-wrapper .banner-body .banner-background {
     margin-top: 16px;
   }
@@ -163,6 +173,12 @@ body#body .site-wrapper .banner-body .banner-background {
 @media screen and (min-width: 600px) {
   body#body .site-wrapper .banner-body .banner-background {
     height: 310px;
+    margin-top: -32px;
+  }
+}
+
+@media screen and (min-width: 643px) {
+  body#body .site-wrapper .banner-body .banner-background {
     margin-top: 11px;
   }
 }
@@ -187,7 +203,7 @@ body#body .site-wrapper .banner-body .banner-profile {
   background-repeat: no-repeat;
   background-size: cover;
   margin: -135px 0 0 206px;
-  border-radius: 1px;
+  border-radius: 32px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 7%;
@@ -244,7 +260,7 @@ body#body .site-wrapper .banner-body .banner-profile {
   body#body .site-wrapper .banner-body .banner-profile {
     margin-right: 140px;
     width: 21%;
-    height: 308px;
+    height: 320px;
   }
 }
 
@@ -395,6 +411,7 @@ body#body .site-wrapper .banner-body .intro h3 {
   body#body .site-wrapper .banner-body .intro h3 {
     left: 140px;
     width: 70%;
+    top: -182px;
   }
 }
 
@@ -525,6 +542,10 @@ body#body .site-wrapper .about-body .header-wrapper .line {
   background-color: #1f252e;
 }
 
+body#body .site-wrapper .about-body #about-section {
+  scroll-margin-top: 12em;
+}
+
 body#body .site-wrapper .about-body .about-content {
   background-color: #fff;
   padding: 30px 30px 60px;
@@ -646,6 +667,10 @@ body#body .site-wrapper #portfolio .portfolio-body .header-wrapper .line {
   background-color: #fff;
 }
 
+body#body .site-wrapper #portfolio .portfolio-body #portfolio-section {
+  scroll-margin-top: 10em;
+}
+
 body#body .site-wrapper #portfolio .portfolio-body .portfolio-cards {
   color: #1f252e;
   background-color: #BFD2C9;
@@ -672,6 +697,12 @@ body#body .site-wrapper #portfolio .portfolio-body .portfolio-cards {
   }
 }
 
+body#body .site-wrapper #portfolio .portfolio-body .portfolio-cards .card:hover .overlay {
+  background-color: rgba(8, 10, 17, 0.1);
+  -webkit-transition: .1s all ease-in;
+  transition: .1s all ease-in;
+}
+
 body#body .site-wrapper #portfolio .portfolio-body .portfolio-cards .card {
   background-color: #fff;
   border-radius: 2px;
@@ -680,8 +711,18 @@ body#body .site-wrapper #portfolio .portfolio-body .portfolio-cards .card {
   width: 70%;
   margin: 30px auto;
   max-width: 312px;
+  cursor: pointer;
   -webkit-box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
           box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+  z-index: 3;
+}
+
+body#body .site-wrapper #portfolio .portfolio-body .portfolio-cards .card .overlay {
+  background-color: rgba(8, 10, 17, 0);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 700px) {
@@ -876,29 +917,33 @@ body#body .site-wrapper #contact .contact-body .wave {
   padding-bottom: 41%;
   vertical-align: middle;
   overflow: hidden;
+  margin-top: -22px;
 }
 
 @media screen and (min-width: 500px) {
   body#body .site-wrapper #contact .contact-body .wave {
     padding-bottom: 39%;
+    margin-top: -82px;
   }
 }
 
 @media screen and (min-width: 600px) {
   body#body .site-wrapper #contact .contact-body .wave {
     padding-bottom: 35%;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  body#body .site-wrapper #contact .contact-body .wave {
-    margin-top: -52px;
+    margin-top: -102px;
   }
 }
 
 @media screen and (min-width: 800px) {
   body#body .site-wrapper #contact .contact-body .wave {
-    padding-bottom: 33%;
+    padding-bottom: 32%;
+    margin-top: -132px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  body#body .site-wrapper #contact .contact-body .wave {
+    margin-top: -210px;
   }
 }
 
