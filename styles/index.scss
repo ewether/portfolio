@@ -1,4 +1,4 @@
-$main-font: 'Fira Sans Condensed', sans-serif;
+$main-font: 'Noto Sans TC', sans-serif;
 
 $main-dark: #1f252e;
 $main-light: #BFD2C9;
@@ -6,6 +6,10 @@ $accent-hex: #b34b73;
 
 html, body {
   height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,7 +24,7 @@ h2 {
 
 body#body {
     margin: 0;
-    // font-family: $main-font;
+    font-family: $main-font;
     letter-spacing: 1.75px;
     font-weight: 200;
     letter-spacing: 2px;
@@ -43,7 +47,6 @@ body#body {
             }
 
             @media screen and (min-width: 650px) {
-                display: flex;
                 justify-content: space-between;
             }
 
@@ -87,6 +90,14 @@ body#body {
                     list-style-type: none;
                     display: flex;
                     align-items: center;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                li:hover {
+                    cursor: pointer;
                 }
             }
         }
@@ -125,12 +136,17 @@ body#body {
                 border-radius: 1px;
                 margin-top: -22px;
 
-                @media screen and (min-width: 523px) {
+                @media screen and (min-width: 565px) {
                     margin-top: 16px;
                 }
 
                 @media screen and (min-width: 600px) {
                     height: 310px;
+                    // margin-top: 11px;
+                    margin-top: -32px;
+                }
+
+                @media screen and (min-width: 643px) {
                     margin-top: 11px;
                 }
 
@@ -151,13 +167,12 @@ body#body {
                 background-repeat: no-repeat;
                 background-size: cover;
                 margin: -135px 0 0 206px;
-                border-radius: 1px;
+                border-radius: 32px;
                 align-self: flex-end;
                 margin-right: 7%;
                 margin-top: -118px;
                 z-index: 3;
                 box-shadow: rgba(50, 50, 93, 0.1) 0px 6px 12px -2px, rgba(0, 0, 0, 0.15) 0px 3px 7px -3px;
-                // box-shadow: rgb(50 50 93 / 19%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
 
                 @media screen and (min-width: 523px) {
                     width: 37%;
@@ -193,7 +208,7 @@ body#body {
                 @media screen and (min-width: 1200px) {
                     margin-right: 140px;
                     width: 21%;
-                    height: 308px;
+                    height: 320px;
                 }
 
                 @media screen and (min-width: 1300px) {
@@ -304,6 +319,7 @@ body#body {
                     @media screen and (min-width: 1200px) {
                         left: 140px;
                         width: 70%;
+                        top: -182px;
                     }
 
                     @media screen and (min-width: 1300px) {
@@ -406,6 +422,10 @@ body#body {
                 }
             }
 
+            #about-section {
+                scroll-margin-top: 12em;
+            }
+
             .about-content {
                 background-color: #fff;
                 padding: 30px 30px 60px;
@@ -498,6 +518,10 @@ body#body {
                     }
                 }
 
+                #portfolio-section {
+                    scroll-margin-top: 10em;
+                }
+
                 .portfolio-cards {
                     color: $main-dark;
                     background-color: $main-light;
@@ -506,13 +530,19 @@ body#body {
                         display: flex;
                         flex-wrap: wrap;
                         padding: 0 60px;
-                        // max-width: 1222px;
                         margin: auto;
                         justify-content: center;
                     }
 
                     @media screen and (min-width: 1100px) {
                         padding: 0 100px;
+                    }
+
+                    .card:hover {
+                        .overlay {
+                            background-color: rgba(8, 10, 17, 0.1);
+                            transition: .1s all ease-in;
+                        }
                     }
 
                     .card {
@@ -523,7 +553,19 @@ body#body {
                         width: 70%;
                         margin: 30px auto;
                         max-width: 312px;
+                        cursor: pointer;
                         box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+                        z-index: 3;
+
+                        .overlay {
+                            background-color: rgba(8, 10, 17, 0.0);
+                            z-index: 1;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        
 
                         @media screen and (min-width: 700px) {
                             margin: 30px 8px 20px;
@@ -624,16 +666,13 @@ body#body {
         }
 
         #contact {
-            // padding: 60px 30px;
 
             .contact-body {
                 background-color: #fff;
                 color: $main-dark;
-                // padding: 20px;
                 display: flex;
                 flex-wrap: wrap;
                 border-radius: 2px;
-                // padding: 60px 30px;
 
                 .header-wrapper {
                     padding: 0 30px;
@@ -687,22 +726,25 @@ body#body {
                     padding-bottom: 41%;
                     vertical-align: middle;
                     overflow: hidden;
+                    margin-top: -22px;
 
                     @media screen and (min-width: 500px) {
                         padding-bottom: 39%;
+                        margin-top: -82px;
                     }
 
                     @media screen and (min-width: 600px) {
                         padding-bottom: 35%;
-                        // margin-top: -52px;
-                    }
-
-                    @media screen and (min-width: 700px) {
-                        margin-top: -52px;
+                        margin-top: -102px;
                     }
 
                     @media screen and (min-width: 800px) {
-                        padding-bottom: 33%;
+                        padding-bottom: 32%;
+                        margin-top: -132px;
+                    }
+
+                    @media screen and (min-width: 1250px) {
+                        margin-top: -210px;
                     }
                 }
 
