@@ -135,12 +135,12 @@ body#body .site-wrapper nav .nav-links li:hover {
 
 body#body .site-wrapper nav .nav-links li:hover::after {
   width: 100px;
-  height: 105%;
+  height: 80%;
   background-color: #fff;
   opacity: .4;
   content: '';
   z-index: 1;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 body#body .site-wrapper nav .nav-links li:hover a {
