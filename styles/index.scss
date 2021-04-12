@@ -34,7 +34,7 @@ body#body {
 
         nav {
             background-color: rgba(191, 124, 150, .9);
-            padding: 22px 30px 16px;
+            padding: 22px 16px 16px;
             color: #fff;
             position: fixed;
             width: 100%;
@@ -83,14 +83,63 @@ body#body {
                     list-style-type: none;
                     display: flex;
                     align-items: center;
+                    transition: .5s;
+                    padding: 0 6px;
+                    margin: 0;
+                    z-index: 3;
 
                     a {
                         color: #fff;
+                        z-index: 3;
+                        font-weight: 400;
+                        height: 30px;
+                        width: 100%;
+                    }
+
+                    &::after {
+                        width: 100px;
+                        height: 20px;
+                        background-color: transparent;
+                        content: '';
+                        position: absolute;
+                        transition: 0.5s;
+                        margin-bottom: 0;
+                        margin-left: -8px;
+                        // border-radius: 2px;
                     }
                 }
 
                 li:hover {
                     cursor: pointer;
+                    // background-color: #fff;
+                    color: $accent-hex;
+
+                    &::after {
+                        width: 100px;
+                        height: 74px;
+                        background-color: #fff;
+                        opacity: .4;
+                        content: '';
+                        z-index: 1;
+                        margin-bottom: 18px;
+                    }
+
+                    a {
+                        color: $accent-hex;
+                        text-decoration: none;
+                    }
+                }
+
+                #portfolio-li {
+                    &::after {
+                        margin-left: -10px;
+                    }
+                }
+
+                #contact-li {
+                    &::after {
+                        margin-left: -14px;
+                    }
                 }
             }
         }
@@ -107,6 +156,7 @@ body#body {
                 height: 327px;
 
                 @media screen and (min-width: 700px) {
+                    background-color: rgba(8, 10, 17, 0.35);
                     height: 560px;
                 }
 

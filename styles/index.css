@@ -26,7 +26,7 @@ body#body {
 
 body#body .site-wrapper nav {
   background-color: rgba(191, 124, 150, 0.9);
-  padding: 22px 30px 16px;
+  padding: 22px 16px 16px;
   color: #fff;
   position: fixed;
   width: 100%;
@@ -101,14 +101,59 @@ body#body .site-wrapper nav .nav-links li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 0 6px;
+  margin: 0;
+  z-index: 3;
 }
 
 body#body .site-wrapper nav .nav-links li a {
   color: #fff;
+  z-index: 3;
+  font-weight: 400;
+  height: 30px;
+  width: 100%;
+}
+
+body#body .site-wrapper nav .nav-links li::after {
+  width: 100px;
+  height: 20px;
+  background-color: transparent;
+  content: '';
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 0;
+  margin-left: -8px;
 }
 
 body#body .site-wrapper nav .nav-links li:hover {
   cursor: pointer;
+  color: #b34b73;
+}
+
+body#body .site-wrapper nav .nav-links li:hover::after {
+  width: 100px;
+  height: 74px;
+  background-color: #fff;
+  opacity: .4;
+  content: '';
+  z-index: 1;
+  margin-bottom: 18px;
+}
+
+body#body .site-wrapper nav .nav-links li:hover a {
+  color: #b34b73;
+  text-decoration: none;
+}
+
+body#body .site-wrapper nav .nav-links #portfolio-li::after {
+  margin-left: -10px;
+}
+
+body#body .site-wrapper nav .nav-links #contact-li::after {
+  margin-left: -14px;
 }
 
 body#body .site-wrapper .banner-body {
@@ -126,6 +171,7 @@ body#body .site-wrapper .banner-body .overlay {
 
 @media screen and (min-width: 700px) {
   body#body .site-wrapper .banner-body .overlay {
+    background-color: rgba(8, 10, 17, 0.35);
     height: 560px;
   }
 }
