@@ -105,13 +105,11 @@ body#body {
                         transition: 0.5s;
                         margin-bottom: 0;
                         margin-left: -8px;
-                        // border-radius: 2px;
                     }
                 }
 
                 li:hover {
                     cursor: pointer;
-                    // background-color: #fff;
                     color: $accent-hex;
 
                     &::after {
@@ -490,6 +488,11 @@ body#body {
                         cursor: pointer;
                         box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
                         z-index: 3;
+
+                        a {
+                            text-decoration: none;
+                            color: $main-dark;
+                        }
 
                         .overlay {
                             background-color: rgba(8, 10, 17, 0.0);
