@@ -26,7 +26,7 @@ body#body {
 
 body#body .site-wrapper nav {
   background-color: rgba(191, 124, 150, 0.9);
-  padding: 22px 16px 16px;
+  padding: 0 16px;
   color: #fff;
   position: fixed;
   width: 100%;
@@ -37,11 +37,12 @@ body#body .site-wrapper nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 62px;
 }
 
 @media screen and (min-width: 700px) {
   body#body .site-wrapper nav {
-    padding: 16px 6% 10px;
+    padding: 0 6%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -50,13 +51,13 @@ body#body .site-wrapper nav {
 
 @media screen and (min-width: 1100px) {
   body#body .site-wrapper nav {
-    padding: 16px 6% 10px;
+    padding: 0 6%;
   }
 }
 
 @media screen and (min-width: 1250px) {
   body#body .site-wrapper nav {
-    padding: 16px 8% 10px;
+    padding: 0 8%;
   }
 }
 
@@ -71,6 +72,10 @@ body#body .site-wrapper nav .nav-header {
     width: 36px;
     display: block;
   }
+}
+
+body#body .site-wrapper nav .nav-header img {
+  margin: 13px 0;
 }
 
 body#body .site-wrapper nav .nav-links {
@@ -101,19 +106,25 @@ body#body .site-wrapper nav .nav-links li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: .5s;
   transition: .5s;
   padding: 0 6px;
   margin: 0;
   z-index: 3;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
 }
 
 body#body .site-wrapper nav .nav-links li a {
   color: #fff;
   z-index: 3;
   font-weight: 400;
-  height: 30px;
-  width: 100%;
+  height: 62px;
+  line-height: 62px;
 }
 
 body#body .site-wrapper nav .nav-links li::after {
@@ -125,7 +136,7 @@ body#body .site-wrapper nav .nav-links li::after {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-bottom: 0;
-  margin-left: -8px;
+  margin-left: -4px;
 }
 
 body#body .site-wrapper nav .nav-links li:hover {
@@ -135,12 +146,11 @@ body#body .site-wrapper nav .nav-links li:hover {
 
 body#body .site-wrapper nav .nav-links li:hover::after {
   width: 100px;
-  height: 80%;
+  height: 100%;
   background-color: #fff;
   opacity: .4;
   content: '';
   z-index: 1;
-  margin-bottom: 5px;
 }
 
 body#body .site-wrapper nav .nav-links li:hover a {
@@ -148,12 +158,8 @@ body#body .site-wrapper nav .nav-links li:hover a {
   text-decoration: none;
 }
 
-body#body .site-wrapper nav .nav-links #portfolio-li::after {
-  margin-left: -10px;
-}
-
 body#body .site-wrapper nav .nav-links #contact-li::after {
-  margin-left: -14px;
+  margin-left: -3px;
 }
 
 body#body .site-wrapper .banner-body {
@@ -189,7 +195,7 @@ body#body .site-wrapper .banner-body .banner-background {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1px;
-  margin-top: 68px;
+  margin-top: 62px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +211,6 @@ body#body .site-wrapper .banner-body .banner-background {
 @media screen and (min-width: 700px) {
   body#body .site-wrapper .banner-body .banner-background {
     height: 560px;
-    margin-top: 62px;
   }
 }
 
